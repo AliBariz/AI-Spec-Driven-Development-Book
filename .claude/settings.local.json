@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell.exe -Command:*)",
+      "Bash(powershell -Command \"$env:SPECIFY_FEATURE=''1-physical-ai-robotics''; & ''.specify/scripts/powershell/check-prerequisites.ps1'' -PathsOnly -Json\")",
+      "Bash(powershell -Command \"[Environment]::SetEnvironmentVariable(''SPECIFY_FEATURE'', ''1-physical-ai-robotics'', ''Process''); & ''.specify/scripts/powershell/check-prerequisites.ps1'' -PathsOnly -Json\")",
+      "Bash(powershell -Command \"[Environment]::SetEnvironmentVariable(''SPECIFY_FEATURE'', ''1-physical-ai-robotics'', ''Process''); & ''.specify/scripts/powershell/check-prerequisites.ps1'' -Json -RequireTasks -IncludeTasks\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

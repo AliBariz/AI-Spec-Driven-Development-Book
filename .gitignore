@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+ros_ws/build/
+ros_ws/install/
+ros_ws/log/
+
+# Docusaurus
+.docusaurus/
+.dist/
+
+# Environment variables
+.env*
+.env*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# Documentation
+docs/build/
+
+# Simulation
+simulation/gazebo/models/
+simulation/gazebo/maps/
