@@ -8,14 +8,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-username.github.io',
+  url: 'https://alibariz.github.io',
   // Set the /<base>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<org-name>/<repo-name>'
-  baseUrl: '/humanoid-robotics-hackathon/',
+  baseUrl: '/AI-Spec-Driven-Development-Book/',
+
 
   // GitHub pages deployment config.
-  organizationName: 'your-username', // Usually your GitHub org/user name.
-  projectName: 'humanoid-robotics-hackathon', // Usually your repo name.
+  organizationName: 'AliBariz', // Usually your GitHub org/user name.
+  projectName: 'AI-Spec-Driven-Development-Book', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
