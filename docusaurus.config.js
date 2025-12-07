@@ -7,7 +7,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://AliBariz.github.io',
-  baseUrl: '/AI-Spec-Driven-Development-Book/',
+  baseUrl: process.env.NODE_ENV === 'development' ? '/' : '/AI-Spec-Driven-Development-Book/',
 
   organizationName: 'AliBariz',
   projectName: 'AI-Spec-Driven-Development-Book',
