@@ -16,6 +16,8 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
 
     steps:
       - uses: actions/checkout@v4
@@ -49,4 +51,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      # Trigger redeployment with latest fixes
+      # Redeploy with latest fixes - fresh run to resolve artifact conflict
