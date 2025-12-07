@@ -14,6 +14,10 @@ const config = {
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    mermaid: true,
+  },
+
 
   i18n: {
     defaultLocale: 'en',

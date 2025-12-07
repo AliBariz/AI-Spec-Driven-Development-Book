@@ -2,9 +2,9 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [1-physical-ai-robotics]
+    branches: [main, 1-physical-ai-robotics]
   pull_request:
-    branches: [1-physical-ai-robotics]
+    branches: [main, 1-physical-ai-robotics]
 
 jobs:
   deploy:
@@ -15,14 +15,19 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
+          cache: 'npm'
+
+      - name: Verify package manager files
+        run: |
+          echo "Checking for package-lock.json:"
+          ls -la package-lock.json || echo "package-lock.json not found"
+          echo "Checking for yarn.lock:"
+          ls -la yarn.lock 2>/dev/null || echo "yarn.lock not found (expected)"
 
       - name: Install dependencies
-        run: |
-          npm install --global yarn
-          yarn install --frozen-lockfile
+        run: npm ci
       - name: Build website
-        run: yarn build
+        run: npm run build
 
       # Popular action to deploy to GitHub Pages:
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
